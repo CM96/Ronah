@@ -1,0 +1,198 @@
+@import 'navigation';
+@import 'variables';
+@import 'about';
+@import 'product';
+
+@import 'contact';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height:100%;
+    font-size:62.5%;
+}
+/*WELCOME SECTION*/
+section{
+    height:100vh;
+}
+.home{
+    position: relative;
+    background-color: $color-secondary;
+    &__first{
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        // background-image: url(../src/images/ronah_logo.png),url(../src/images/smoothie_1.jpg);
+        background-image: url(../src/images/smoothie_1.jpg);
+        background-repeat: no-repeat;    
+        background-size:cover;
+        // background-position: left bottom, center;  
+        top:0;
+        left: 0;
+        clip-path: circle(69.4% at 30% 37%);
+    }
+    &__second{
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top:0;
+        right: 0;
+        background-color: $color-secondary;
+        h1{
+            font-weight: 900;
+            font-size: 12rem;
+            text-transform: uppercase;
+            background-image: url(../src/images/smoothie_1.jpg);
+            background-position: right;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color:transparent;
+
+        }
+        .welcome-text{
+            font-size: 2rem;
+            text-align: center;
+            // color:$;
+            padding: 2rem;
+            position:relative; 
+            // margin-top: 30%;
+        }
+    }
+}
+// .first-column {
+//     background-image: url(../src/images/ronah_logo.png),url(../src/images/smoothie_1.jpg);
+//     background-repeat: no-repeat, no-repeat;
+//     background-size:30% 20%,cover;
+//     background-position: left bottom, center;
+//     position:relative;
+// }
+.text-small{
+    font-size:2rem;
+}
+// .brand{
+//     position: absolute;
+//     bottom:45%;
+//     color:white;
+//     font-weight: 300;
+//     padding:1.5rem;
+// }
+// .brand:after{
+//     content:"";
+//     height:2px;
+//     width:25%;
+//     background:white;
+//     position:absolute;
+//     left:4%;
+//     bottom:0;
+// }
+
+/*second-column*/
+
+.second-column {
+    background-color: #E8E8E8;
+    font-size: 1.6rem;
+}
+.welcome-text{
+    font-size: 1.5rem;
+    text-align: center;
+    position:relative; 
+    margin-top: 30%;
+}
+.paragraph{
+    margin-top:2.5rem;
+}
+/* SLIDE UP ANIMATION */
+
+/* Components */
+.btn-premier{
+    background-color:$color-tertiary;
+    font-size:1.6rem;
+    text-transform: uppercase;
+    padding:1.3rem;
+    color:white;
+    font-weight:500;
+    display: inline-block;
+    transition:all .5s ease;
+}
+.btn-premier:hover{
+    color:white;
+    box-shadow:1rem 1.5rem 4rem rgba(0,0,0,.2);
+    transform: translateY(-2rem);
+}
+.heading-primary{
+    text-align: center;
+    position: relative;
+    padding:1rem;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-family: 'Dancing Script', cursive;
+    color:$color-tertiary;
+    &:after{
+        content: " ";
+        height:3px;
+        width:10%;
+        position:absolute;
+        bottom:0;
+        left:45%;
+        background-color:$color-tertiary;
+    }
+}
+.main-footer{
+    text-align: center;
+    border-top: 2px solid $color-secondary;
+    background-color: $color-tertiary;
+    color:white;
+    height:20rem;
+    padding:2rem;
+    font-size: 1.6rem;
+
+    .content{
+        // background-color:white;
+        position: relative;
+        border-bottom:2px solid $color-secondary;
+        .img-logo{
+            position: absolute;
+            left:0;
+            top:0;
+            border-radius: 2em;
+
+        }
+        .socials{
+            a{
+                margin-top:1rem;
+                padding:1rem;
+                i{
+                    // font-size:4rem;
+                    margin-left:2rem;
+                    color:$color-secondary;
+                    &.fa-instagram:hover{
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+                    }
+                    &.fa-facebook:hover{
+                        color:#3B5998;   
+                    }
+                    &.fa-linkedin:hover{
+                        color:#04669A;   
+                    }
+                    &.fa-github:hover{
+                        color:black;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        margin-top: 4rem;
+        text-transform: uppercase;
+        color:$color-secondary;
+    }
+}

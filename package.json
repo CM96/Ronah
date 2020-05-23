@@ -1,0 +1,14 @@
+{
+  "name": "ronah_smoothies",
+  "version": "1.0.0",
+  "description": "Website for Ronah Smoothies, a flourishing business based in Kinshasa(DRC)",
+  "main": "ronah.js",
+  "scripts": {
+    "sass": "node-sass -w scss/  -o src/ -r"
+  },
+  "author": "Chris Munoko",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}

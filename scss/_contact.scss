@@ -1,0 +1,62 @@
+
+@import 'variables';
+
+
+.contact{
+    min-height: calc(70vh - 25rem); // FOR FOOTER
+    background-color: rgba(#eee, .3);
+    position: relative;
+    
+    .img-box{
+        width: 50% ;
+        height:80%;
+        position: absolute;
+        background-color: $color-tertiary;
+        top:20%;
+        left:0;
+        -webkit-clip-path: polygon(14% 28%, 47% 27%, 47% 0, 53% 0, 53% 27%, 85% 28%, 85% 50%, 76% 74%, 63% 100%, 35% 100%, 22% 71%, 14% 50%);
+        clip-path: polygon(14% 28%, 47% 27%, 47% 0, 53% 0, 53% 27%, 85% 28%, 85% 50%, 76% 74%, 63% 100%, 35% 100%, 22% 71%, 14% 50%);
+    }
+    .content{
+        width: 50% ;
+        height:100%;
+        position: absolute;
+        background-color: $color-tertiary;
+        top:0;
+        right:0;
+        -webkit-clip-path:polygon(30% 0, 100% 0, 100% 100%, 4% 100%, 30% 60%);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 4% 100%, 30% 60%);
+        padding: 5rem;
+        .contact__list{
+            position: relative;
+            float: right;
+            font-size: 2rem;
+            .contact-info{
+                background-color: rgba(#eee, .3);
+                margin-top: 2rem;
+                border-radius: 5rem;
+                // padding: .5rem;
+                a{
+                    height: 100%;
+                    text-decoration: none;
+                    color:white;
+                    margin: 0 4rem 4rem 0 ;
+                    &:hover{
+                        color:black;
+                    }
+                }
+                i{
+                    margin: 1rem 2rem 2rem 2rem  ;
+                }
+            }
+        }
+    }
+    p{
+        position: absolute;
+        bottom: 0;
+        right: 10rem;
+        font-size: 2rem;
+        color:#eee;
+    }
+}
+
