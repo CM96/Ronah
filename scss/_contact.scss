@@ -3,12 +3,11 @@
 
 
 .contact{
-    min-height: calc(70vh - 25rem); // FOR FOOTER
+    min-height: calc(125vh - 25rem); // FOR FOOTER
     background-color: rgba(#eee, .3);
     position: relative;
-    
     .img-box{
-        width: 50% ;
+        width: 45% ;
         height:80%;
         position: absolute;
         background-color: $color-tertiary;
@@ -18,7 +17,7 @@
         clip-path: polygon(14% 28%, 47% 27%, 47% 0, 53% 0, 53% 27%, 85% 28%, 85% 50%, 76% 74%, 63% 100%, 35% 100%, 22% 71%, 14% 50%);
     }
     .content{
-        width: 50% ;
+        width: 55% ;
         height:100%;
         position: absolute;
         background-color: $color-tertiary;
@@ -35,7 +34,6 @@
                 background-color: rgba(#eee, .3);
                 margin-top: 2rem;
                 border-radius: 5rem;
-                // padding: .5rem;
                 a{
                     height: 100%;
                     text-decoration: none;

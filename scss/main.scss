@@ -2,8 +2,8 @@
 @import 'variables';
 @import 'about';
 @import 'product';
-
 @import 'contact';
+
 *{
     margin:0;
     padding:0;
@@ -17,112 +17,75 @@ html,body {
 }
 /*WELCOME SECTION*/
 section{
-    height:100vh;
+    min-height:100%;
 }
 .home{
     position: relative;
     background-color: $color-secondary;
-    &__first{
+    overflow-x: hidden;
+    height: 100%;
+    border:5% solid $color-tertiary;
+    h1#ronah{
         position: absolute;
-        width: 60%;
-        height: 100%;
-        // background-image: url(../src/images/ronah_logo.png),url(../src/images/smoothie_1.jpg);
-        background-image: url(../src/images/smoothie_1.jpg);
-        background-repeat: no-repeat;    
-        background-size:cover;
-        // background-position: left bottom, center;  
-        top:0;
-        left: 0;
-        clip-path: circle(69.4% at 30% 37%);
-    }
-    &__second{
-        position: absolute;
-        width: 40%;
-        height: 100%;
-        top:0;
-        right: 0;
-        background-color: $color-secondary;
-        h1{
-            font-weight: 900;
-            font-size: 12rem;
-            text-transform: uppercase;
-            background-image: url(../src/images/smoothie_1.jpg);
-            background-position: right;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color:transparent;
-
+        top:30%;
+        left:4%;
+        font-family: 'Dancing Script', cursive;
+        font-size: 14rem;
+        color: $color-secondary;
+        z-index: 2;
+        span{
+            color:$color-tertiary;
         }
-        .welcome-text{
-            font-size: 2rem;
-            text-align: center;
-            // color:$;
-            padding: 2rem;
-            position:relative; 
-            // margin-top: 30%;
+        span:nth-of-type(2) {
+            color:$color-prime;
         }
     }
+    h1#smoothie{
+        position: absolute;
+        top:30%;
+        right:1%;
+        font-size: 14rem;
+        font-family: 'Dancing Script', cursive;
+        color: $color-tertiary;
+        z-index: 2;
+        letter-spacing: .14rem;
+        span{
+            color:$color-secondary;
+        }
+        span:nth-of-type(2) {
+            color:$color-prime;
+        }
+    }
+    &__text{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: $color-tertiary;
+        clip-path: circle(48.8% at 50% 50%);
+        text-align: center;
+        img.smoothie-cup{
+            position: relative;
+        }
+        .paragraph{
+            position: absolute;
+            bottom: 0;
+            left:30%;
+            width: 40%;
+            height: 35%;
+            background-color: $color-secondary;
+            border-radius: 2rem 2rem 0 0;
+            display: flex;
+            align-items: center;
+            p{
+                width: 80%;
+                margin: 0 auto;
+                font-size: 1.8rem;
+            }
+        }
+        
+    }
 }
-// .first-column {
-//     background-image: url(../src/images/ronah_logo.png),url(../src/images/smoothie_1.jpg);
-//     background-repeat: no-repeat, no-repeat;
-//     background-size:30% 20%,cover;
-//     background-position: left bottom, center;
-//     position:relative;
-// }
-.text-small{
-    font-size:2rem;
-}
-// .brand{
-//     position: absolute;
-//     bottom:45%;
-//     color:white;
-//     font-weight: 300;
-//     padding:1.5rem;
-// }
-// .brand:after{
-//     content:"";
-//     height:2px;
-//     width:25%;
-//     background:white;
-//     position:absolute;
-//     left:4%;
-//     bottom:0;
-// }
-
-/*second-column*/
-
-.second-column {
-    background-color: #E8E8E8;
-    font-size: 1.6rem;
-}
-.welcome-text{
-    font-size: 1.5rem;
-    text-align: center;
-    position:relative; 
-    margin-top: 30%;
-}
-.paragraph{
-    margin-top:2.5rem;
-}
-/* SLIDE UP ANIMATION */
-
-/* Components */
-.btn-premier{
-    background-color:$color-tertiary;
-    font-size:1.6rem;
-    text-transform: uppercase;
-    padding:1.3rem;
-    color:white;
-    font-weight:500;
-    display: inline-block;
-    transition:all .5s ease;
-}
-.btn-premier:hover{
-    color:white;
-    box-shadow:1rem 1.5rem 4rem rgba(0,0,0,.2);
-    transform: translateY(-2rem);
-}
+// FOR ALL SECTION HEADERS
 .heading-primary{
     text-align: center;
     position: relative;
@@ -150,9 +113,7 @@ section{
     height:20rem;
     padding:2rem;
     font-size: 1.6rem;
-
     .content{
-        // background-color:white;
         position: relative;
         border-bottom:2px solid $color-secondary;
         .img-logo{
@@ -160,14 +121,12 @@ section{
             left:0;
             top:0;
             border-radius: 2em;
-
         }
         .socials{
             a{
                 margin-top:1rem;
                 padding:1rem;
                 i{
-                    // font-size:4rem;
                     margin-left:2rem;
                     color:$color-secondary;
                     &.fa-instagram:hover{
@@ -196,3 +155,5 @@ section{
         color:$color-secondary;
     }
 }
+
+@import 'mediaQ';

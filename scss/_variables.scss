@@ -3,3 +3,36 @@ $color-prime:#FCA325;
 $color-secondary:#E8E8E8; // mainly for buttons
 $color-tertiary: #dc3545;
 
+// MEDIA QUERIES
+
+@mixin mediaXXSM {
+  @media screen and (min-width: 320px) and (max-width:360px) {
+    @content;
+  }
+}
+@mixin mediaXSM {
+    @media screen and (min-width: 361px) and (max-width:479.08px) {
+      @content;
+    }
+  }
+  @mixin mediaSM {//YELLOW
+      @media screen and (min-width: 480px) and (max-width:767px) {
+        @content;
+      }
+    }
+    @mixin mediaMD {//BLUE
+      @media screen and (min-width: 768px) and (max-width: 991.08px) {
+        @content;
+      }
+    }
+    @mixin mediaLG {//RED
+      @media screen and (min-width: 992px) and (max-width: 1199.08px) {
+        @content;
+      }
+    }
+    
+    @mixin mediaXL {
+      @media screen and (min-width: 1200px) {
+        @content;
+      }
+    }

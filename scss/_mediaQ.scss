@@ -1,0 +1,705 @@
+@import 'variables';
+    //create extra small for iphone 4 and nokia lumnia
+    @include mediaXXSM{
+        .home{
+            background-color:lightblue;
+            h1#ronah{
+            left:0;
+            top: 0;
+            transform: scale(.3);
+            color:$color-secondary;
+            span{color:inherit}
+            }
+            h1#smoothie{
+            top: 10%;
+            left: -5%;
+            transform: scale(.3);
+            color:$color-secondary;
+            span{color:inherit}
+            }
+            &__text{
+                img.smoothie-cup{
+                    display: none;
+                }
+                .paragraph{
+                    width: 100%;
+                    left: 0;
+                    height: 55%;
+                    align-items: initial;
+                    padding-top: 5rem;
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }       
+            }
+        }
+        /*ABOUT*/
+        .about{
+            background-color: lightblue;
+            padding: 1.5rem;
+            .text-small{
+                margin-top: .3rem;
+            }
+            .info-boxes{
+                width: 80%;
+                grid-template-columns: 1fr;
+                grid-gap:2rem;
+                .box{
+                    .inner{
+                        .inner-front{
+                            .text-wrapper{
+                                padding: 1rem;
+                                .heading-secondary{
+                                    margin:0 auto;
+                                }
+                                .box-text{
+                                    margin-top:.4rem;                    
+                                }
+                                #info{
+                                    color:$color-tertiary;
+                                }
+                            }
+                        }
+                        .inner-back{
+                            overflow: scroll;
+                        }
+                    }
+                }
+            }    
+        }
+        // PRODUCTS
+        .product{
+            background-color: lightblue;
+            .sliders-wrap{
+                width: 95%;
+                .slider{
+                    &__description{
+                        position: absolute;
+                        top:50%;
+                        right: 0;
+                        width: 100%;
+                        height: 50%;
+                        border-radius: initial;
+                        padding: .5rem;
+                        // left:
+                        h3{
+                            margin: 1rem auto;
+                        }
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    &__image{
+                        position: absolute;
+                        left: 20%;
+                        width: 55%;
+                        height: 50%;
+                        border-radius: initial;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    }
+                    .slider-1{
+                        display:block;
+        
+                    }
+                    .slider-2, .slider-3, .slider-4, .slider-5, .slider-6, .slider-7, .slider-8, .slider-9, .slider-10{
+                        display:none;
+                    }
+                }
+                .wrapper{
+                    transform: scale(.7);
+                   left: 30%;
+                   bottom: 0;
+                }
+        
+        }
+        
+        //CONTACTS
+        .contact{
+            .heading-primary{
+                z-index: 4;
+                color:$color-secondary;
+                &:after{
+                    background-color: $color-secondary;
+                }
+            }
+            .img-box{
+                display: none;
+            }
+            .content{
+                width: 100% ;
+                height:100%;
+                position: absolute;
+                left: 0;
+                top:0;
+                -webkit-clip-path:none;
+                clip-path: none;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+                .contact__list{
+                    font-size: 1.7rem;             
+                    .contact-info:first-child{
+                        padding: 1.5rem;
+                        a{
+                            margin: 0 .5rem 1rem 0 ;
+                        }
+                        i{
+                            margin:0  ;
+                        }
+                    }
+                }
+            }
+            p{
+                display: none;
+            }
+        }
+        
+    }
+    @include mediaXSM {
+    // HOME
+    .home{
+        // background-color:aquamarine;
+        h1{
+            display: none;
+        }
+
+        &__text{
+            img{
+                position: absolute;
+                left: 50%;
+                top:50%;
+                transform: translate(-50%, -50%);
+            }
+            .paragraph{
+               width: 100%;
+               left: 0;
+                height: 38%;
+                align-items: initial;
+                padding: 1rem;
+                z-index: 3;
+                p{
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
+            }       
+        }
+    }
+    /*ABOUT*/
+    .about{
+        // background-color: aquamarine;
+        padding: 1.5rem;
+        .text-small{
+            margin-top: .3rem;
+        }
+        .info-boxes{
+            width: 80%;
+            // background-color: white;
+            grid-template-columns: 1fr;
+            grid-gap:2rem;
+            .box{
+                .inner{
+                    .inner-front{
+                        .text-wrapper{
+                            padding: 1rem;
+                            .heading-secondary{
+                                margin:0 auto;
+                            }
+                            .box-text{
+                                margin-top:.4rem;                    
+                            }
+                            #info{
+                                color:$color-tertiary;
+                            }
+                        }
+                    }
+                    .inner-back{
+                        overflow: scroll;
+                    }
+                }
+            }
+        }    
+    }
+    // PRODUCTS
+    .product{
+        background-color: aquamarine;
+        .sliders-wrap{
+            width: 95%;
+            background-color: transparent;
+            .slider{
+                &__description{
+                    position: absolute;
+                    top:50%;
+                    right: 0;
+                    width: 100%;
+                    height: 50%;
+                    border-radius: initial;
+                }
+                &__image{
+                    position: absolute;
+                    left: 20%;
+                    width: 55%;
+                    height: 50%;
+                    border-radius: initial;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                }
+                .slider-1{
+                    display:block;
+    
+                }
+                .slider-2, .slider-3, .slider-4, .slider-5, .slider-6, .slider-7, .slider-8, .slider-9, .slider-10{
+                    display:none;
+                }
+            }
+            .wrapper{
+               left: 2.7%;
+               bottom: 1rem;
+            }
+    
+    }
+    
+    //CONTACTS
+    .contact{
+        min-height: calc(125vh - 25rem); // FOR FOOTER
+        background-color: rgba(#eee, .3);
+        position: relative;
+        
+        .heading-primary{
+            z-index: 4;
+            color:$color-secondary;
+            &:after{
+                background-color: $color-secondary;
+            }
+        }
+        .img-box{
+            display: none;
+        }
+        .content{
+            width: 100% ;
+            height:100%;
+            position: absolute;
+            left: 0;
+            top:0;
+            -webkit-clip-path:none;
+            clip-path: none;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            .contact__list{
+                font-size: 1.7rem;             
+                .contact-info:first-child{
+                    // transform: scale(.8);
+                    padding: 1.8rem;
+                    a{
+                        margin: 0 2rem 1rem 0 ;
+                    }
+                    i{
+                        margin:0  ;
+                    }
+                }
+            }
+        }
+        p{
+            display: none;
+        }
+    }
+    
+    //FOOTER
+    }
+    @include mediaSM {
+    //NAVIGATION
+    // HOME
+    .home{
+        background-color:yellow;
+        h1#ronah{
+            left:0;
+            font-size: 5rem;
+            letter-spacing: 1rem;
+            color:black;
+            span{
+                color:$color-prime;
+            }
+        }
+        h1#smoothie{
+            right:0;
+            font-size: 4rem;
+
+            color:black;
+            span:first-child{
+                color:black;
+            }
+        }
+
+        &__text{
+            img{
+                transform: scale(.6);
+            }
+            .paragraph{
+                width: 80%;
+                margin: 0 auto;
+                left:10%;
+                height: 43%;
+                p{
+                    font-size: 1.6rem;
+                }
+            }       
+        }
+    }
+    /*ABOUT*/
+    // .about{
+        .about{
+            text-align:center;
+            font-size:1.6rem;
+            background-color: yellow;
+            padding: 1rem;
+            .info-boxes{
+                width: 60%;
+                margin-top: auto 0 2rem 0;
+                // margin-bottom: auto;
+                background-color: white;
+                grid-template-columns: 1fr;
+                grid-gap:2rem;
+                .box{
+                    .inner{
+                        .inner-front{
+                            .text-wrapper{
+                                .heading-secondary{
+                                    margin:.8rem auto;
+                                }
+                                .box-text{
+                                    margin-top:.6rem;                    
+                                }
+                                #info{
+                                    color:$color-tertiary;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }    
+        }
+    //     }    
+    // }
+    // PRODUCTS
+    .product{
+        background-color: yellow;
+        .sliders-wrap{
+            width: 95%;
+            background-color: transparent;
+            .slider{
+                &__description{
+                    position: absolute;
+                    top:50%;
+                    right: 0;
+                    width: 100%;
+                    height: 50%;
+                    border-radius: initial;
+                }
+                &__image{
+                    position: absolute;
+                    left: 20%;
+                    width: 55%;
+                    height: 50%;
+                    border-radius: initial;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                }
+                .slider-1{
+                    display:block;
+    
+                }
+                .slider-2, .slider-3, .slider-4, .slider-5, .slider-6, .slider-7, .slider-8, .slider-9, .slider-10{
+                    display:none;
+                }
+            }
+            .wrapper{
+               left: 2.7%;
+               bottom: 1rem;
+            }
+    
+    }
+    
+    //CONTACTS
+    .contact{    
+        background-color: $color-tertiary;
+        .heading-primary{
+            z-index: 4;
+            color:$color-secondary;
+            &:after{
+                background-color: $color-secondary;
+            }
+        }
+        .img-box{
+            display: none;
+        }
+        .content{
+            width: 100% ;
+            height:100%;
+            position: relative;
+            -webkit-clip-path:none;
+            clip-path: none;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            .contact__list{
+                font-size: 1.7rem;             
+                .contact-info:first-child{
+                    padding: 1.8rem;
+                    a{
+                        margin: 0 2rem 1rem 0 ;
+                    }
+                    i{
+                        margin:0  ;
+                    }
+                }
+            }
+        }
+        p{
+            display: none;
+        }
+    }
+    
+    //FOOTER
+    }
+    @include mediaMD {
+     
+    // HOME
+    .home{
+        background-color:blue;
+        h1#ronah{
+            left:0;
+            transform: scale(.7);
+            letter-spacing: 1rem;
+            span{
+                color:$color-prime;
+            }
+        }
+        h1#smoothie{
+            right: -6%;
+            margin-left: 8rem;
+            transform: scale(.6);
+            color:$color-prime;
+        }
+        &__text{
+            clip-path: circle(50.0% at 50% 50%);
+            img{
+                transform: scale(.7);
+            }
+            .paragraph{
+                width: 70%;
+                margin: 0 auto;
+                left:15%;
+             
+                p{
+                    font-size: 1.6rem;
+                }
+            }       
+        }
+    }
+    /*ABOUT OKAY*/
+    .about{
+        background-color: blue;
+        padding:1rem;
+        // header
+        .heading-primary{
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            padding: .5rem;
+        }
+        .info-boxes{
+            width: 45%;
+            background-color: white;
+            grid-template-columns: 1fr;
+            grid-gap:2rem;
+        }    
+    }
+    // PRODUCTS
+    .product{
+        background-color: blue;
+        .sliders-wrap{
+            width:95%;
+            background-color: #fff;
+        }
+        .wrapper{
+            left:2.5%;
+        }
+    
+    }
+    //CONTACTS
+    .contact{
+        background-color: blue;
+        position: relative;
+        .heading-primary{
+            z-index: 2;
+            &:after{
+                background-color: $color-secondary;
+            }
+            span:first-child{
+                color: rgba($color-tertiary, .3);
+            }
+            span:nth-of-type(2){
+                color:$color-secondary;
+            }
+        }
+        .img-box{
+            width: 32%;
+        }
+        .content{
+            width: 68%;
+            display: block;
+            padding: 1rem;
+            .contact__list{
+                margin: 5rem auto;
+                font-size: 1.7rem;             
+                .contact-info{
+                    transform: scale(.85);
+                    padding: 1.8rem;
+                    a{
+                        margin-bottom:1rem;
+                    }
+                    i{
+                        margin: .5rem 1rem 1rem .5rem  ;
+                    }
+                }
+            }
+        }
+        p{
+            display: none;
+        }
+    }
+    //FOOTER
+    }
+    //large tablet, small laptops: HERE
+    @include mediaLG {
+    
+    // HOME
+    .home{
+        position: relative;
+        background-color: red;
+        overflow-x: hidden;
+        height: 100%;
+        h1#ronah{
+            left:1%;
+            transform: scale(.9);
+            letter-spacing: 1.5rem;
+            span{
+                color:$color-prime;
+            }
+        }
+        h1#smoothie{
+            right: 0;
+            transform: scale(.8);
+            color:$color-prime;
+        }
+        &__text{
+            clip-path: circle(50.2% at 50% 50%);
+            .smoothie-cup{
+                transform: scale(.8);
+            }
+    
+            .paragraph{
+                width: 50%;
+                margin: 0 auto;
+                left:25%;
+             
+                p{
+                    width: 80%;
+                    margin: 0 auto;
+                    font-size: 1.7rem;
+                }
+            }       
+        }
+    }
+    /*ABOUT*/
+        .about{
+            padding: 1.5rem;
+            font-size:1.6rem;
+            background-color: red;
+            .info-boxes{
+                width: 80%;
+                background-color: white;
+                grid-template-columns: 1fr 1fr;
+                grid-gap:2rem;
+        
+            }    
+        }
+    // PRODUCTS
+    .product{
+        background-color: red;
+        .sliders-wrap{
+            width:90%;
+            background-color: #fff;
+        }
+        .wrapper{
+            left:5%;
+        }
+    
+    }
+    //CONTACTS
+    .contact{
+        background-color: red;
+        position: relative;
+        .heading-primary{
+            z-index: 2;
+            &:after{
+                background-color: $color-secondary;
+            }
+            span:first-child{
+                color: rgba($color-tertiary, .3);
+            }
+            span:nth-of-type(2){
+                color:$color-secondary;
+            }
+        }
+        .img-box{
+            width: 32%;
+        }
+        .content{
+            width: 68%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1rem;
+            .contact__list{
+                font-size: 1.7rem;             
+                .contact-info{
+                    padding: 1.8rem;
+                    a{
+                        margin-bottom:1rem;
+                    }
+                    i{
+                        margin: .5rem 1rem 1rem .5rem  ;
+                    }
+                }
+            }
+        }
+    }
+    
+    //FOOTER
+
+    }
+        
+    @include mediaXL {
+        
+    
+    }
