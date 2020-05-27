@@ -30,7 +30,7 @@ section{
         top:30%;
         left:4%;
         font-family: 'Dancing Script', cursive;
-        font-size: 14rem;
+        font-size: 13rem;
         color: $color-secondary;
         z-index: 2;
         span{
@@ -43,8 +43,8 @@ section{
     h1#smoothie{
         position: absolute;
         top:30%;
-        right:1%;
-        font-size: 14rem;
+        right:0;
+        font-size: 13rem;
         font-family: 'Dancing Script', cursive;
         color: $color-tertiary;
         z-index: 2;

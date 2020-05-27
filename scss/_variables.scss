@@ -10,11 +10,19 @@ $color-tertiary: #dc3545;
     @content;
   }
 }
+  // landscape view for phones(iphone 4, galaxy s5,...)
+
+@mixin mediaXXSML{
+  @media screen and (min-width: 320px) and (max-width:360px)  and (orientation: landscape) {
+      @content;
+    }
+}
 @mixin mediaXSM {
     @media screen and (min-width: 361px) and (max-width:479.08px) {
       @content;
     }
   }
+  
   @mixin mediaSM {//YELLOW
       @media screen and (min-width: 480px) and (max-width:767px) {
         @content;
