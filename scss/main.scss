@@ -18,6 +18,7 @@ html,body {
 /*WELCOME SECTION*/
 section{
     min-height:100%;
+    overflow: hidden;
 }
 .home{
     position: relative;
@@ -59,12 +60,10 @@ section{
     }
     &__text{
         position: relative;
-        width: 100%;
+        width: 75%;
         height: 100%;
+        margin: 0 auto;
         background-color: $color-tertiary;
-        // -webkit-clip-path:circle(48.8% at 50% 50%);
-        // clip-path: circle(48.8% at 50% 50%);
-        border-radius: 100%;
         text-align: center;
         overflow: hidden;
         img.smoothie-cup{
@@ -73,8 +72,8 @@ section{
         .paragraph{
             position: absolute;
             bottom: 0;
-            left:30%;
-            width: 40%;
+            left:12.5%;
+            width: 75%;
             height: 35%;
             background-color: $color-secondary;
             border-radius: 2rem 2rem 0 0;

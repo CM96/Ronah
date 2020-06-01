@@ -14,18 +14,19 @@
             h1#ronah{
             left:0;
             top: 5%;
-            transform: scale(.3);
+            transform: scale(.5);
             color:$color-secondary;
             span{color:inherit}
             }
             h1#smoothie{
             top: 15%;
             left: -10%;
-            transform: scale(.3);
+            transform: scale(.5);
             color:$color-secondary;
             span{color:inherit}
             }
             &__text{
+                width: 100%;
                 img.smoothie-cup{
                     display: none;
                 }
@@ -86,13 +87,13 @@
                         width: 100%;
                         height: 50%;
                         border-radius: initial;
-                        padding: .5rem;
+                        padding: 1.5rem;
                         // left:
                         h3{
                             margin: 1rem auto;
                         }
                         p{
-                            margin: 0;
+                            margin: 1rem;
                         }
                     }
                     &__image{
@@ -166,30 +167,33 @@
     @include mediaXSM {
     // HOME
     .home{
-        h1{
-            display: none;
-        }
-
-        &__text{
-            img{
-                position: absolute;
-                left: 50%;
-                top:50%;
-                transform: translate(-50%, -50%);
+        h1#ronah{
+            left:0;
+            top: 5%;
+            transform: scale(.6);
+            color:$color-secondary;
+            span{color:inherit}
             }
-            .paragraph{
-               width: 100%;
-               left: 0;
-                height: 38%;
-                align-items: initial;
-                padding: 1rem;
-                z-index: 3;
-                p{
-                    font-size: 1.5rem;
-                    width: 100%;
+            h1#smoothie{
+            top: 15%;
+            left: -10%;
+            transform: scale(.6);
+            color:$color-secondary;
+            span{color:inherit}
+            }
+            &__text{
+                width: 100%;
+                img.smoothie-cup{
+                    display: none;
                 }
-            }       
-        }
+                .paragraph{
+                    width: 100%;
+                    left: 0;
+                    height: 50%;
+                    align-items: initial;
+                    padding-top: 5rem;
+                }       
+            }     
     }
     /*ABOUT*/
     .about{
@@ -267,7 +271,6 @@
     }
     //CONTACTS
     .contact{
-        background-color: yellow;
         .heading-primary{
             z-index: 4;
             color:$color-secondary;
@@ -308,14 +311,11 @@
     @include mediaSM {
     // HOME
     .home{
-        @media screen and (min-height:350px) and (max-height:450px) {
-            &__text{
-                img{
-                    position: absolute;
-                    top:-20%;
-                    left: 0;
-                }
-            }
+        @media screen and (min-height:320px) and (max-height:360px) {
+            min-height: 190vh;
+        }
+        @media screen and (min-height:361px) and (max-height:480px) {
+            min-height: 125vh;
         }
         h1#ronah{
             left:0;
@@ -329,7 +329,6 @@
         h1#smoothie{
             right:0;
             font-size: 4rem;
-
             color:black;
             span:first-child{
                 color:black;
@@ -338,13 +337,14 @@
 
         &__text{
             img{
-                transform: scale(.6);
+                width: 70%;
+                height: 50%;
             }
             .paragraph{
-                width: 80%;
-                margin: 0 auto;
-                left:10%;
+                border-radius: initial;
+                width: 100%;
                 height: 43%;
+                left: 0;
                 p{
                     font-size: 1.6rem;
                 }
@@ -471,7 +471,8 @@
     @include mediaMD {
     // HOME
     .home{
-        @media screen and (min-height:350px) and (max-height:450px) {
+        @media screen and (min-height:350px) and (max-height:480px) {
+            min-height: 140vh;
             &__text{
                 img{
                     position: absolute;
@@ -495,15 +496,12 @@
             color:$color-prime;
         }
         &__text{
-            -webkit-clip-path:circle(50.0% at 50% 50%);
-            clip-path: circle(50.0% at 50% 50%);
             img{
                 transform: scale(.7);
             }
             .paragraph{
-                width: 70%;
-                margin: 0 auto;
-                left:15%;
+                height: 40%;
+
                 p{
                     font-size: 1.6rem;
                 }
@@ -526,6 +524,12 @@
     }
     // PRODUCTS
     .product{
+        @media screen and (min-height:350px) and (max-height:480px) {
+            height: 120vh;
+            .sliders-wrap{
+                margin: 3rem auto;
+            }
+        }
         .sliders-wrap{
             width:100%;
             .slider{
@@ -546,7 +550,7 @@
         }
         .wrapper{
             left:0;
-            bottom: 0;
+            bottom: 7rem;
         }
     }
     //CONTACTS
@@ -587,6 +591,16 @@
     
     // HOME
     .home{
+        @media screen and (min-height: 1024px) and (max-height: 1400px){
+            .home__text{
+                .paragraph{
+                    padding: 0;
+                    p{
+                        font-size: 1.9rem;
+                    }
+                }
+            }
+        }
         h1#ronah{
             left:1%;
             transform: scale(.9);
@@ -601,17 +615,12 @@
             color:$color-prime;
         }
         &__text{
-            -webkit-clip-path:circle(50.2% at 50% 50%);
-            clip-path: circle(50.2% at 50% 50%);
             .smoothie-cup{
                 transform: scale(.8);
             }
     
             .paragraph{
-                width: 50%;
-                margin: 0 auto;
-                left:25%;
-             
+                height: 38%;
                 p{
                     width: 80%;
                     margin: 0 auto;
@@ -665,11 +674,14 @@
     }
     //CONTACTS
     .contact{
+        background-size: 50rem;
+        background-position: left;
         .heading-primary{
             transform: scale(.9);
         }
         .content{
             padding: 1rem;
+            align-items: center;
             .contact__list{
                 font-size: 1.7rem;             
                 .contact-info{
@@ -685,5 +697,15 @@
         }
     }
     }
-    @include mediaXL { 
+    @include mediaXL {
+        // QUICK FIX for IPads 
+        @media screen and (min-height: 1024px) and (max-height: 1400px){
+            .contact{
+                background-size: 70rem;
+                .content{
+                    padding: 1rem;
+                    align-items: center;    
+            }
+        }
+    }   
     }
