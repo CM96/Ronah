@@ -4,27 +4,28 @@
 
 .contact{
     min-height: calc(125vh - 25rem); // FOR FOOTER
-    background-color: rgba(#eee, .3);
+    background-image: url(../src/contactBg2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    .img-box{
-        width: 45% ;
-        height:80%;
-        position: absolute;
-        background-color: $color-tertiary;
-        top:20%;
-        left:0;
-        -webkit-clip-path: polygon(14% 28%, 47% 27%, 47% 0, 53% 0, 53% 27%, 85% 28%, 85% 50%, 76% 74%, 63% 100%, 35% 100%, 22% 71%, 14% 50%);
-        clip-path: polygon(14% 28%, 47% 27%, 47% 0, 53% 0, 53% 27%, 85% 28%, 85% 50%, 76% 74%, 63% 100%, 35% 100%, 22% 71%, 14% 50%);
+    .heading-primary{
+        color:$color-prime;
+        z-index: 2;
+        font-size: 4rem;
+        &:after{
+            background-color: $color-prime;
+        }
     }
     .content{
-        width: 55% ;
+        width: 50% ;
         height:100%;
         position: absolute;
         background-color: $color-tertiary;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
         top:0;
         right:0;
-        -webkit-clip-path:polygon(30% 0, 100% 0, 100% 100%, 4% 100%, 30% 60%);
-        clip-path: polygon(30% 0, 100% 0, 100% 100%, 4% 100%, 30% 60%);
         padding: 5rem;
         .contact__list{
             position: relative;

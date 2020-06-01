@@ -22,8 +22,9 @@ section{
 .home{
     position: relative;
     background-color: $color-secondary;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 100%;
+    z-index: 2;
     border:5% solid $color-tertiary;
     h1#ronah{
         position: absolute;
@@ -61,8 +62,11 @@ section{
         width: 100%;
         height: 100%;
         background-color: $color-tertiary;
-        clip-path: circle(48.8% at 50% 50%);
+        // -webkit-clip-path:circle(48.8% at 50% 50%);
+        // clip-path: circle(48.8% at 50% 50%);
+        border-radius: 100%;
         text-align: center;
+        overflow: hidden;
         img.smoothie-cup{
             position: relative;
         }
