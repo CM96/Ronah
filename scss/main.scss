@@ -64,6 +64,9 @@ section{
         height: 100%;
         margin: 0 auto;
         background-color: $color-tertiary;
+        -webkit-box-shadow: .2rem .2rem 2rem 0 rgba(0,0,0,0.5);
+        -moz-box-shadow: .2rem .2rem 2rem 0 rgba(0,0,0,0.5);
+        box-shadow: .2rem .2rem 2rem 0 rgba(0,0,0,0.5);
         text-align: center;
         overflow: hidden;
         img.smoothie-cup{
@@ -84,8 +87,7 @@ section{
                 margin: 0 auto;
                 font-size: 1.8rem;
             }
-        }
-        
+        }    
     }
 }
 // FOR ALL SECTION HEADERS
