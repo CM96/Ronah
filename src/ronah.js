@@ -14,17 +14,6 @@ bar.addEventListener('click',(e)=>{
     menuOverlay.classList.toggle('out');
 });
 
-//SCROLL ANIMATIONS
-window.onscroll=function(){scrollFunc()};
-
-function scrollFunc(){
-    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-        box.forEach(element => {
-           element.classList.add('slideUp'); 
-        });
-      }
-}
-
 // PRODUCT CAROUSEL 
 
 var slideIndex=0;

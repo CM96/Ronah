@@ -14,8 +14,6 @@
     grid-auto-rows:minmax(40rem, auto);
 
     .box{
-        opacity: 0;
-        visibility: hidden;
         text-align: center;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
         transition: all .5s ease;
@@ -112,25 +110,4 @@
             }
         }
     }
-}
-.slideUp.box{
-    opacity: 1;
-    visibility: visible;
-}
-.slideUp{
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-}
-@keyframes slideUp {
-0% {
-  opacity: 0;
-  -webkit-transform: translateY(40%);
-} 
-100% {
-  opacity: 1;
-  -webkit-transform: translateY(0%);
-}
 }

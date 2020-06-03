@@ -116,8 +116,6 @@
   grid-gap: 2rem;
   grid-auto-rows: minmax(40rem, auto); }
   .info-boxes .box {
-    opacity: 0;
-    visibility: hidden;
     text-align: center;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
@@ -188,25 +186,6 @@
     background-image: url(./images/naturelle.jpg); }
   .info-boxes .box-3 .inner .inner-front .img-wrapper {
     background-image: url(./images/healthy.jpg); }
-
-.slideUp.box {
-  opacity: 1;
-  visibility: visible; }
-
-.slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible; }
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(40%); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%); } }
 
 .product {
   position: relative;
