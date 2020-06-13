@@ -21,18 +21,18 @@
   </div>
   <nav class="navigation">
     <div class="nav-list">
-      <a class="nav-item" href="#home ">Intro </a>
-      <a class="nav-item" href="#about">Bénéfices</a>
-      <a class="nav-item" href="#product">Produits</a>
-      <a class="nav-item" href="#contact">Contacts</a>
+      <a class="nav-item" href="#home ">INTRO </a>
+      <a class="nav-item" href="#about">BÉNÉFICES</a>
+      <a class="nav-item" href="#product">PRODUITS</a>
+      <a class="nav-item" href="#contact">CONTACTS</a>
     </div>
   </nav>
   <!--Welcome section-->
   <section id ="home" class="home">
-    <h1 id="ronah"><span>R</span><span>o</span>nah</h1>
-    <h1 id="smoothie"><span>Smoot</span><span>h</span>ies</h1>
+    <h1 id="ronah" data-aos="fade-right" data-aos-delay="100"><span>R</span><span>o</span>nah</h1>
+    <h1 id="smoothie" data-aos="fade-left" data-aos-delay="100"><span>Smoot</span><span>h</span>ies</h1>
     <div class="home__text">
-      <img src="./src/images/ronahSmoothie1.png" alt="smoothie cup(ronah)" class="smoothie-cup">
+      <img src="./src/images/ronahSmoothie1.png" data-aos="fade-down" data-aos-delay="100" alt="smoothie cup(ronah)" class="smoothie-cup">
       <div class="paragraph">
         <p>
           Ronah Smoothies créé en 2018 en RDC. Une entreprise congolaise qui fait essentiellement des smoothies. Doux, onctueux, pleins de bonnes
@@ -45,7 +45,6 @@
   <!-- SECTION TWO -->
   <section id="about" class="about">
     <h1 class="heading-primary">Les qualités de nos smoothies</h1>
-    <!-- <p class="text-small">Nos smoothies sont...</p> -->
     <div class="info-boxes container">
       <!-- BOX 1 -->
       <div class="box box-1" data-aos="fade-up" data-aos="1000">
@@ -127,28 +126,11 @@
           </div>
         </div>
   </section>
-  <!-- ######################################################################################################################################### -->
   <!-- SECTION THREE -->
   <section id="product" class="product">
     <h1 class="heading-primary">Nos smoothies</h1>
     <div class="sliders-wrap">
       <div class="slider slider-1">
-        <div class="slider__description">
-          <h3>Banana Milk</h3>
-          <p>
-            <strong>Composition:</strong>  banane, jus de citron,yaourt,...
-            <p><strong>Prix</strong></p>
-          <ul>
-            <li><strong>Regulier: </strong> 3$</li>
-            <li><strong>Grand: </strong> 5$</li>
-          </ul>
-          </p>
-        </div>
-        <div class="slider__image">
-          <img src="./src/images/ronah1.jpg" alt="smoothie drink">
-        </div>
-      </div>
-      <div class="slider slider-2">
         <div class="slider__description">
           <h3>Smoothie Folie</h3>
           <p>
@@ -162,6 +144,22 @@
         </div>
         <div class="slider__image">
           <img src="./src/images/ronah8.jpg" alt="smoothie drink">
+        </div>
+      </div>
+      <div class="slider slider-2">
+        <div class="slider__description">
+          <h3>Banana Milk</h3>
+          <p>
+            <strong>Composition:</strong>  banane, jus de citron,yaourt,...
+            <p><strong>Prix</strong></p>
+          <ul>
+            <li><strong>Regulier: </strong> 3$</li>
+            <li><strong>Grand: </strong> 5$</li>
+          </ul>
+          </p>
+        </div>
+        <div class="slider__image">
+          <img src="./src/images/ronah1.jpg" alt="smoothie drink">
         </div>
       </div>
       <div class="slider slider-3">
@@ -291,18 +289,18 @@
   <section class="contact" id="contact">
     <h1 class="heading-primary"> Contactez<span>-nous</span></h1>
     <div class="content">
-      <div class="contact__list">
-        <div class="contact-info ">
+      <div class="contact__list" data-aos="fade-left">
+        <div class="contact-info "  >
           <i class="fas fa-at fa-2x"></i>
           <a href="mailTo:Ronah-smoothies@gmail.com">ronah.smoothies@gmail.com</a>
         </div>
-        <div class="contact-info">
+        <div class="contact-info" >
           <i class="fas fa-phone fa-2x"></i>
-          <a href="tel:+24381456035">+243814560353</a>
+          <a href="tel:+243850426564">+243850426564</a>
         </div>
         <div class="contact-info">
-          <i class="fas fa-mobile fa-2x"></i>
-          <a  href="tel:+243850426564">+243850426564</a>
+          <i class="fab fa-whatsapp fa-2x"></i>
+          <a href="https://api.whatsapp.com/send?phone=+243814560353">+243814560353</a>
         </div>
       </div>
     </div>
@@ -312,7 +310,7 @@
   <footer class="main-footer">
     <div class="content container">
       <div class="img-logo bg-dark ">
-        <img src="./src/images/ronah_logo.png" width="60" height="60" alt="chris' brand logo">
+        <img src="./src/images/ronah_logo.png" width="60" height="60" alt="chris' brand logo" >
       </div>
       <div class="socials d-flex justify-content-end">
         <a href="https://www.facebook.com/Ronah-Smoothies-2192937187618735/" target="_blank">
@@ -332,7 +330,6 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 400, // offset (in px) from the original trigger point
   duration: 1000, // values from 0 to 3000, with step 50ms

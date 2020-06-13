@@ -23,7 +23,6 @@ function resetShow(){
     for(let i=0;i<mySlide.length;i++){
         mySlide[i].style.display="none";
     }
-    // console.log(mySlide);
 }
 function startShow(){
     resetShow();
@@ -66,10 +65,7 @@ function slideLeft() {
     slideRight();
     currentSlide();
   });
-  
-  
   startShow();
-  
 // SMOOTH SCROLL TO SECTIONS
   var scroll = new SmoothScroll('.nav-list a[href*="#"]', {
 	speed: 600

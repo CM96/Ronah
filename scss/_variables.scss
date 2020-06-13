@@ -33,7 +33,12 @@ $color-tertiary: #dc3545;
     }
     
     @mixin mediaXL {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1200px)and (max-width: 1536.08px) {
+        @content;
+      }
+    }
+    @mixin mediaXXL {
+      @media screen and (min-width: 1537px) {
         @content;
       }
     }

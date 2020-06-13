@@ -25,6 +25,7 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
+        align-items: center;
         top:0;
         right:0;
         padding: 5rem;
@@ -33,7 +34,7 @@
             float: right;
             font-size: 2rem;
             .contact-info{
-                background-color: rgba(#eee, .3);
+                background-color: $color-prime;
                 margin-top: 2rem;
                 border-radius: 5rem;
                 a{

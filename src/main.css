@@ -5,9 +5,8 @@
   top: 2rem;
   width: 7rem;
   height: 7rem;
-  background-color: rgba(220, 53, 69, 0.8);
+  background-color: #dc3545;
   transition: all .3s ease-in-out;
-  opacity: 1;
   z-index: 5;
   border-radius: 50%;
   display: flex;
@@ -40,21 +39,17 @@
   font-size: 3px;
   position: relative;
   left: -18%;
-  text-transform: uppercase;
   text-decoration: none;
   margin-top: .2rem;
-  background-image: linear-gradient(120deg, transparent 40%, #E8E8E8 60%);
-  background-size: 300%;
-  background-position: left;
   color: white;
   font-weight: 600;
   transition: all .3s ease-in-out; }
 
 .nav-list a.nav-item:hover {
+  z-index: 10;
   cursor: pointer;
-  background-size: 100%;
   font-style: italic;
-  color: #191919;
+  color: #FCA325;
   transform: translateX(3px); }
 
 /* MENU BUTTON */
@@ -159,10 +154,6 @@
             margin: 1.5rem auto; }
           .info-boxes .box .inner .inner-front .text-wrapper #info {
             color: #dc3545; }
-        .info-boxes .box .inner .inner-front .btn-secondaire {
-          font-size: 1.6rem;
-          padding: 1rem;
-          text-transform: uppercase; }
       .info-boxes .box .inner .inner-back {
         position: absolute;
         width: 100%;
@@ -276,6 +267,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
     top: 0;
     right: 0;
     padding: 5rem; }
@@ -284,7 +276,7 @@
       float: right;
       font-size: 2rem; }
       .contact .content .contact__list .contact-info {
-        background-color: rgba(238, 238, 238, 0.3);
+        background-color: #FCA325;
         margin-top: 2rem;
         border-radius: 5rem; }
         .contact .content .contact__list .contact-info a {
@@ -331,7 +323,7 @@ section {
     left: 4%;
     font-family: 'Dancing Script', cursive;
     font-size: 13rem;
-    color: #E8E8E8;
+    color: white;
     z-index: 2; }
     .home h1#ronah span {
       color: #dc3545; }
@@ -347,7 +339,7 @@ section {
     z-index: 2;
     letter-spacing: .14rem; }
     .home h1#smoothie span {
-      color: #E8E8E8; }
+      color: white; }
     .home h1#smoothie span:nth-of-type(2) {
       color: #FCA325; }
   .home__text {
@@ -515,13 +507,13 @@ section {
     .product .sliders-wrap .slider-2, .product .sliders-wrap .slider-3, .product .sliders-wrap .slider-4, .product .sliders-wrap .slider-5, .product .sliders-wrap .slider-6, .product .sliders-wrap .slider-7, .product .sliders-wrap .slider-8, .product .sliders-wrap .slider-9, .product .sliders-wrap .slider-10 {
       display: none; }
   .product .wrapper {
-    transform: scale(0.7);
+    transform: scale(0.8);
     left: 30%;
     bottom: 0; } }
 
 @media screen and (min-width: 320px) and (max-width: 378px) and (min-height: 320px) and (max-height: 450px) {
   .contact {
-    min-height: 100vh; } }
+    min-height: 120vh; } }
 
 @media screen and (min-width: 320px) and (max-width: 378px) {
   .contact .heading-primary {
@@ -536,7 +528,6 @@ section {
     left: 0;
     top: 0;
     z-index: 1;
-    align-items: center;
     padding: 1.5rem; }
     .contact .content .contact__list {
       font-size: 1.7rem; }
@@ -634,7 +625,6 @@ section {
     left: 0;
     top: 0;
     z-index: 1;
-    align-items: center;
     padding: 2rem; }
     .contact .content .contact__list {
       font-size: 1.7rem; }
@@ -659,16 +649,14 @@ section {
   .home h1#ronah {
     left: 0;
     font-size: 5rem;
-    letter-spacing: 1rem;
-    color: black; }
+    letter-spacing: 1rem; }
+    .home h1#ronah span:first-child {
+      color: #dc3545; }
     .home h1#ronah span {
       color: #FCA325; }
   .home h1#smoothie {
     right: 0;
-    font-size: 4rem;
-    color: black; }
-    .home h1#smoothie span:first-child {
-      color: black; }
+    font-size: 4rem; }
   .home__text img {
     width: 70%;
     height: 50%; }
@@ -746,7 +734,6 @@ section {
       margin-bottom: 2rem; }
     .contact .content {
       width: 100%;
-      align-items: center;
       padding: 2rem; }
       .contact .content .contact__list {
         font-size: 1.7rem; }
@@ -905,8 +892,7 @@ section {
     .contact .heading-primary {
       transform: scale(0.9); }
     .contact .content {
-      padding: 1rem;
-      align-items: center; }
+      padding: 1rem; }
       .contact .content .contact__list {
         font-size: 1.7rem; }
         .contact .content .contact__list .contact-info {
@@ -916,9 +902,23 @@ section {
           .contact .content .contact__list .contact-info i {
             margin: .5rem 1rem 1rem .5rem; } }
 
-@media screen and (min-width: 1200px) and (min-height: 1024px) and (max-height: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1536.08px) and (min-height: 1024px) and (max-height: 1400px) {
   .contact {
     background-size: 70rem; }
     .contact .content {
       padding: 1rem;
       align-items: center; } }
+
+@media screen and (min-width: 1537px) {
+  .home__text img {
+    transform: scale(1.2); }
+  .home__text .paragraph p {
+    line-height: 2.5; } }
+
+@media screen and (min-width: 1537px) and (min-height: 1024px) and (max-height: 1380px) {
+  .about .info-boxes {
+    grid-auto-rows: minmax(60rem, auto);
+    grid-gap: 4rem; }
+    .about .info-boxes .box .inner .inner-front .img-wrapper {
+      width: 100%;
+      height: 50%; } }

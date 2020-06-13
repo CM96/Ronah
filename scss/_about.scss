@@ -60,11 +60,6 @@
                     color:$color-tertiary;
                 }
             }
-            .btn-secondaire{
-                font-size:1.6rem;
-                padding:1rem;
-                text-transform: uppercase;
-            }
         }
         .inner-back{
             position: absolute;
@@ -84,7 +79,6 @@
             p{
                 margin-top: 1rem;
             }
-
         }
     }
         &:hover .inner{
