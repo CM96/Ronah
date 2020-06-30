@@ -7,13 +7,6 @@ const bar=document.querySelector('.hamburger-button'),
       arrowRight=document.querySelector('#arrowRight'),
       slideNumber=document.querySelector('#slide-number');
 
-
-// HAMBURGER MENU TOGGLE
-bar.addEventListener('click',(e)=>{
-    bar.classList.toggle('change');
-    menuOverlay.classList.toggle('out');
-});
-
 // PRODUCT CAROUSEL 
 
 var slideIndex=0;
@@ -67,6 +60,6 @@ function slideLeft() {
   });
   startShow();
 // SMOOTH SCROLL TO SECTIONS
-  var scroll = new SmoothScroll('.nav-list a[href*="#"]', {
+  var scroll = new SmoothScroll('.nav-item a[href*="#"]', {
 	speed: 600
 });
